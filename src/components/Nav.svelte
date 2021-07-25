@@ -75,7 +75,7 @@
 
     // dispatch("theme", themeColor);
   }
-  let starsCount = 159;
+  let starsCount = 161;
 
   const userAction = async () => {
     const response = await fetch("https://api.github.com/search/repositories?q=svelte-svg-patterns");
@@ -112,7 +112,7 @@
 <svelte:window on:click={closeWindow} />
 
 <nav>
-  <div class="logoOuter">
+  <div class="logoOuter grid items-center">
     <a aria-current={segment === undefined ? "page" : undefined} href="." class="justify-self-start">
       <div class="logo" style="color: var(--secondary-color)">
         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1.5em" height="1.5em" viewBox="0 0 128 128" data-inline="false">
@@ -184,7 +184,7 @@
     </div>
   </div>
 
-  <div class="rightLinks justify-self-end">
+  <div class="rightLinks grid grid-flow-col items-center justify-self-end">
     <a rel="noopener noreferrer" title={strings.buyCoffee} class="bmc" target="_blank" href="https://www.buymeacoffee.com/naveencs">
       {@html Constants.bmcHeader}
     </a>
@@ -217,86 +217,3 @@
     </button>
   </div>
 </nav>
-
-<style>
-  .notifications {
-    z-index: 20;
-    display: none;
-    width: min(calc(100vw - 31.2px), 360px);
-    top: 4.2em;
-    position: fixed;
-    font-size: 0.8em;
-    border: 1px solid var(--accent-text);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    background-clip: padding-box;
-    color: var(--secondary-text-color);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-  .notifications h3 {
-    background-color: var(--accent-text);
-    color: var(--accent-text-color);
-    padding: 0.7em 1em;
-    margin: 0;
-  }
-  .viewLink {
-    margin: 0;
-    background-color: var(--card-bg);
-    padding-top: 0.5em;
-  }
-  .viewLink a {
-    text-decoration: none;
-    display: grid;
-    grid-auto-flow: column;
-    place-content: start;
-    border-top: 1px solid var(--gray-text);
-    padding: 1.25em 1em;
-    gap: 0.5em;
-    font-size: 1.1em;
-  }
-  .notifications ul {
-    padding: var(--notification-list-padding);
-    overflow: auto;
-    max-height: 80vh;
-    margin: 0;
-    background-color: var(--card-bg);
-  }
-  li:is(.versionHeader) {
-    list-style: none;
-    margin: var(--notification-header-margin);
-    font-weight: 600;
-    border-top: 1px solid var(--gray-text);
-    padding: var(--notification-header-padding);
-    font-size: 1.1em;
-  }
-  li:not(.versionHeader) {
-    padding-bottom: 0.5em;
-    color: var(--gray-text);
-  }
-  li:first-child {
-    margin-top: 0;
-    border-top: 0;
-    padding-top: 1em;
-  }
-
-  :global(.notifications a) {
-    display: inline;
-    color: var(--accent-text);
-    text-underline-offset: 0.15em;
-    text-decoration: underline;
-    text-decoration-thickness: 0.15em;
-  }
-
-  :global(.notifications a:hover) {
-    color: var(--accent-hover);
-  }
-
-  button.bellIcon:focus,
-  button.bellIcon:hover,
-  button.bellIcon:active {
-    background-color: transparent;
-  }
-</style>

@@ -124,13 +124,15 @@
 <section class="landing grid light-text accent-bg">
   <div class="leftOuter grid items-center">
     <div class="left">
-      <p class="comingSoon">OPEN SOURCE</p>
-      <h1>Create amazing SVG patterns in seconds</h1>
+      <p class="comingSoon">{strings.openSource}</p>
+      <h1>{strings.feature1}</h1>
       <p class="subtitle">
-        {strings.description} {strings.description2} {strings.description3}
+        {strings.description}
+        {strings.description2}
+        {strings.description3}
       </p>
       <!-- <button class="secondary-bg dark-text" onclick="location.href='patterns'" type="button">Explore patterns</button> -->
-      <a class="secondary-bg dark-text cta" href="/">Explore patterns</a>
+      <a class="secondary-bg dark-text cta" href="/">{strings.explore}</a>
       <!-- <div class="subscribe grid"><script async data-uid="ba0253339a" src="https://crafty-artist-9316.ck.page/ba0253339a/index.js">
         </script></div> -->
     </div>
@@ -281,7 +283,7 @@
   </div>
 </section>
 <div class="overlapCard accent-bg text-center">
-  <div class="container mx-auto">Handy tool for developers and designers. Unleash your creativity to produce visually stunning patterns.</div>
+  <div class="container mx-auto">{strings.feature2} {strings.feature3}</div>
 </div>
 <div class="triangleOuter">
   <svg class="triangle" viewbox="0 0 100 10" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -298,14 +300,14 @@
         </div>
       </div>
       <div class="featureHeading">
-        <h2>Tweak Colors</h2>
-        <p class="featureDescription">Customize foreground and background colors easily</p>
+        <h2>{strings.tweak}</h2>
+        <p class="featureDescription">{strings.feature4}</p>
       </div>
     </div>
     <div class="featureLeft grid items-center lg:w-3/5 mx-auto">
       <div class="featureHeading">
-        <h2>Modify Stroke</h2>
-        <p class="featureDescription">Adjust the stroke width on supported patterns</p>
+        <h2>{strings.modify}</h2>
+        <p class="featureDescription">{strings.feature5}</p>
       </div>
       <div class="animatedIcon">
         {@html svgIcon1("thickMorph", "a2")}
@@ -319,14 +321,14 @@
         </div>
       </div>
       <div class="featureHeading">
-        <h2>Alter Angle</h2>
-        <p class="featureDescription">Change the angle to generate unique images</p>
+        <h2>{strings.alterAngle}</h2>
+        <p class="featureDescription">{strings.feature6}</p>
       </div>
     </div>
     <div class="featureLeft grid items-center lg:w-3/5 mx-auto">
       <div class="featureHeading">
-        <h2>Copy Code</h2>
-        <p class="featureDescription">Copy CSS and SVG code directly to your clipboard for web projects</p>
+        <h2>{strings.copyCode}</h2>
+        <p class="featureDescription">{strings.feature7}</p>
       </div>
       <div class="animatedIcon">
         <div class="cf">
@@ -430,8 +432,8 @@
         </div>
       </div>
       <div class="featureHeading">
-        <h2>Download Options</h2>
-        <p class="featureDescription">Download a tileable SVG or a high resolution seamless PNG image for print</p>
+        <h2>{strings.downloadOptions}</h2>
+        <p class="featureDescription">{strings.feature8}</p>
       </div>
     </div>
   </div>
@@ -439,8 +441,8 @@
 <!-- For designers and developers -->
 <div class="overlapCard accent-bg text-center">
   <div class="container mx-auto">
-    Copy the pattern to set the website background with great results. Choose from a variety of patterns and shapes which cover a host of styles, from
-    the cool, quirky and edgy, to the more luxurious designs.
+    {strings.feature9}
+    {strings.feature10}
   </div>
 </div>
 <div class="triangleOuter">
@@ -455,7 +457,7 @@
     </div>
   </header>
   <section class="container grid mx-auto px-5 py-24 items-center text-center">
-    <h2 class="accent-text">Make vector patterns like a pro</h2>
+    <h2 class="accent-text">{strings.feature11}</h2>
     <p class="subtitle ">
       A pattern maker app to create abstract and cool patterns. Save time by making royalty free SVG backgrounds for your projects. Easy to use tool
       to generate your desired image. Ideal for branding and logo design projects, business cards, creating custom tees and apparel, posters, flyers,
@@ -484,33 +486,6 @@
   <img loading="lazy" alt="Mockup of Business Card" src={imagePrefix + "bussiness-card-mockup.png"} />
   <img loading="lazy" alt="Mockup of Coffee Cup" src={imagePrefix + "coffee-cup-mockup.png"} />
 </section>
-
-<!-- <footer class="accent-bg light-text">
-  <svg viewBox="0 0 1440 240" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fill="#ffc800"
-      fill-opacity="1"
-      d="M0,128L60,144C120,160,240,192,360,192C480,192,600,160,720,133.3C840,107,960,85,1080,74.7C1200,64,1320,64,1380,64L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" />
-  </svg>
-  <div class="footerOuter container mx-auto justify-center">
-    <a name="subscribe" />
-    <div class="subscribe-bottom grid mx-auto">
-      <p class="text-center pb-5">Sign up for project updates and beta access</p><script async data-uid="1f3a13ab3c" src="https://crafty-artist-9316.ck.page/1f3a13ab3c/index.js">
-      </script></div>
-
-    <div>
-      <div class="grid justify-center">
-        <Logo className="mx-auto" />
-      </div>
-
-      <div class="footer justify-center light-text">
-        Made with&nbsp;
-        <span style="color:#e25555">❤</span>
-        &nbsp;by&nbsp;<a class="secondary-text" href="https://twitter.com/MrNaveenCS">Naveen CS</a>
-      </div>
-    </div>
-  </div>
-</footer> -->
 <Footer />
 
 <style>
@@ -590,7 +565,7 @@
     grid-template-columns: auto 1fr;
     border-radius: var(--border-radius);
   }
-  .toolbox label{
+  .toolbox label {
     text-transform: capitalize;
   }
   .features {
@@ -721,15 +696,6 @@
     /* background-position: right top;
     background-repeat: no-repeat; */
   }
-
-  /* .subscribe {
-    max-width: 520px;
-  }
-
-  .subscribe-bottom {
-    padding: 1.5rem;
-    max-width: 520px;
-  } */
 
   .animatedIcon {
     width: 7rem;
